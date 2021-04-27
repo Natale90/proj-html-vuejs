@@ -1,0 +1,89 @@
+@import 'common';
+@import 'variables';
+
+
+header{
+  @include header-brg-color;
+  .my_container{
+    @include inner_container;
+    display:flex;
+    align-items: center;
+
+
+    nav{
+      width: 100%;
+
+      ul{
+        display: flex;
+        justify-content: flex-end;
+
+        li{
+          margin-left: 40px;
+          font-size: $medium-font;
+        }
+
+        li:first-of-type a{
+          color:$focus-text;
+        }
+
+        li:last-of-type a{
+          @include btn-nav;
+          &:hover{
+            @include btn-dark-hover;
+
+          }
+          margin-left: 60px;
+          border:1px solid white;
+
+        }
+      }
+    }
+
+    .jumbotron{
+      width: 100%;
+      height: 600px;
+      display: flex;
+      background-image: url('img/header.png');
+      background-repeat: no-repeat;
+      background-size: contain;
+      background-position: 100%;
+
+      .jumbo_text{
+        margin-top: 100px;
+        div{
+          font-size: 4rem;
+          color:#fff;
+        }
+
+        .txt-bold{
+          font-weight: bold;
+        }
+
+        p{
+          color:#03a7d3e6;
+          font-size: 1.2rem;
+          margin: 80px 0;
+        }
+
+        a:first-of-type{
+          @include btn-light;
+          &:hover{
+            @include btn-light-hover;
+          }
+          margin-right: 60px;
+        }
+
+        a:last-of-type{
+          @include btn-dark;
+          &:hover{
+            @include btn-dark-hover;
+          }
+        }
+      }
+    }
+
+
+  }
+
+
+}
