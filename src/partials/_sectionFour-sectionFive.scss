@@ -1,0 +1,134 @@
+@import 'common';
+@import 'variables';
+
+
+main{
+  //here strats SECTION FOUR
+  section#ourPricing{
+    position: relative;
+
+    .section_top_bgd{
+      height: 600px;
+      @include header-brg-color;
+
+      .row{
+        @include sectionTitle;
+        color:#fff;
+      }
+    }
+
+    .my_container{
+      display:flex;
+      justify-content: space-around;
+      position: absolute;
+      left:0;
+      right:0;
+      top: 50%;
+
+      //here starts general poster style
+      .poster{
+        width: calc(100% / 3 - 40px);
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content:space-around;
+        align-items: center;
+        position: relative;
+        padding: 40px 0;
+        box-shadow: 0 30px 70px #00000026;
+        border-radius: 20px;
+
+        div{
+          text-align: center;
+        }
+
+        .poster_back_img{
+          color: lightgreen;
+
+          font-size: 350px;
+          position: absolute;
+          top: -80px;
+          right:0;
+          z-index: -1;
+        }
+
+        .poster_title{
+
+          h4{
+            font-size: 3rem;
+          }
+
+          p{
+            font-size: 1.5rem;
+          }
+        }
+
+        .poster_price{
+          margin: 20px;
+          h4{
+            font-size: 5rem;
+          }
+        }
+
+        .poster_content{
+          li{
+            margin: 20px;
+            font-size: 1.2rem;
+          }
+        }
+
+      }
+      //here ends general poster style
+
+      .poster:first-of-type,
+      .poster:last-of-type{
+        background-color: #fff;
+        .poster_button{
+          margin: 30px 0 50px 0;
+          a{
+            @include btn-light;
+            &:hover{
+              @include btn-light-hover;
+            }
+            .fa-arrow-right{
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+
+
+      .poster:nth-of-type(2){
+        background: rgb(2,1,17);
+        background: linear-gradient(90deg, rgba(2,1,17,1) 0%,
+        rgba(138,55,67,1) 0%, rgba(255,4,32,1) 0%, rgba(196,61,79,1) 0%,
+        rgba(249,99,107,1) 95%);
+        color:#fff;
+
+        .poster_button{
+          margin: 30px 0 50px 0;
+          a{
+            padding: 15px 40px;
+            border-radius: 25px;
+            font-size: 1.3rem;
+            background-color: #fff;
+            color:#f9636b;
+
+            .fa-arrow-right{
+              margin-left: 30px;
+            }
+          }
+        }
+      }
+    }
+
+
+  }
+  //here ends SECTION FOUR
+
+  //here strats SECTION FIVE
+  section#latestPost{
+
+  }
+  //here ends SECTION FIVE
+}

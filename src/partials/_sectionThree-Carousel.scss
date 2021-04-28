@@ -1,0 +1,78 @@
+@import 'common';
+@import 'variables';
+
+
+main{
+
+  section#carousel{
+
+    .my_container{
+
+
+      //here strats the top side of the section
+      .section_top{
+        display: flex;
+        justify-content: space-between;
+        align-items:flex-end;
+        .top_left{
+          p{
+            color: $focus-text;
+            font-size: 1.2rem;
+          }
+          .section_description{
+            font-size: 4rem;
+          }
+
+        }
+
+        .top_right{
+
+          .fa-arrow-left,.fa-arrow-right{
+            padding: 15px;
+            border-radius: 50%;
+            border:1px solid $focus-text;
+            color: $focus-text;
+            margin-left: 20px;
+
+            &:hover{
+              color:#fff;
+              box-shadow: 0 0 30px rgb(200,100,150);
+              background: rgb(2,1,17);
+              background: linear-gradient(90deg, rgba(2,1,17,1) 0%,
+              rgba(138,55,67,1) 0%, rgba(255,4,32,1) 0%, rgba(196,61,79,1) 0%,
+              rgba(249,99,107,1) 95%);
+              cursor:pointer;
+            }
+          }
+        }
+
+      }
+      //here ends the top side of the section
+
+      //here strats the carosuel in the section
+      .carousel_slider{
+        padding: 50px 0;
+        display:flex;
+        flex-wrap: wrap;
+        .slideBox{
+          width: calc(100% / 3 - 40px);
+          height: 500px;
+          margin: 0 20px;
+          border:1px solid black;
+
+          .slideBoxTop{
+            img{
+              max-width: 100%;
+              height: auto;
+            }
+          }
+        }
+      }
+      //here ends the carosuel in the section
+    }
+
+
+
+
+  }
+}

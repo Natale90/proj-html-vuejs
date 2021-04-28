@@ -28,6 +28,51 @@ function initVue() {
         img: 'img/Group-567.png',
         title: 'Branding Strategy',
         prph: 'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'
+      }],
+      slider: [{
+        img: 'img/8wa60okr-1-790x576.jpg',
+        slideTitle: 'Bastket of Flower on table',
+        slideSub: 'Brand Strategy'
+      }, {
+        img: 'img/DRY-1-790x576.jpg',
+        slideTitle: 'Purinky Products',
+        slideSub: 'Digital Experience'
+      }, {
+        img: 'img/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg',
+        slideTitle: 'Satisfy Poster',
+        slideSub: 'Branding Strategy'
+      }, {
+        img: 'img/84316050-0af0-49db-a53a-241d47ddad0e-2-790x576.jpg',
+        slideTitle: 'Mock-up Template',
+        slideSub: 'Ecommerce'
+      }, {
+        img: 'img/a247b00b-3621-470f-b4b8-b3ac46f25907-1-790x576.jpg',
+        slideTitle: 'Landing Page',
+        slideSub: 'Digital Experience'
+      }, {
+        img: 'img/8wa60okr-1-790x576.jpg',
+        slideTitle: 'Bastket of Flower on table',
+        slideSub: 'Brand Strategy'
+      }, {
+        img: 'img/DRY-1-790x576.jpg',
+        slideTitle: 'Purinky Products',
+        slideSub: 'Digital Experience'
+      }],
+      posterList: [{
+        liLeft: 'Creative ',
+        liRight: ' Design Enabled'
+      }, {
+        liLeft: 'Vibrant ',
+        liRight: ' Color Usage'
+      }, {
+        liLeft: 'Eye ',
+        liRight: ' Catching Design'
+      }, {
+        liLeft: 'Extreme ',
+        liRight: ' Typography'
+      }, {
+        liLeft: 'Exceptional ',
+        liRight: ' Design'
       }]
     },
     methods: {}

@@ -66,3 +66,19 @@ $focus-text2:#03a7d3e6;
   box-shadow: 0 0 30px rgb(200,100,150);
 
 }
+
+@mixin sectionTitle{
+  text-align: center;
+  padding: 60px 0px 100px 0px;
+
+
+  p:first-child{
+    color: $focus-text;
+    font-size: 1.2rem;
+  }
+
+  .section_title{
+    font-size: 3.5rem;
+  }
+
+}
