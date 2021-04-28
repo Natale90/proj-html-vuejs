@@ -166,28 +166,44 @@
                 </div>
               </div>
               <div class="top_right">
-                <i class="fas fa-arrow-left"></i>
-                <i class="fas fa-arrow-right"></i>
+                <i @click='slidePrev()' class="fas fa-arrow-left"></i>
+                <i @click='slideNext()' class="fas fa-arrow-right"></i>
               </div>
 
             </div>
 
             <div class="carousel_slider">
-              <div v-for='slide in slider' class="slideBox">
 
-                <div class="slideBoxTop">
-                  <img :src="slide.img" alt="">
-                </div>
+              <div v-if='index === active' v-for='(slide, index) in slider' class="slideBox">
 
-                <div class="slideBoxBottom">
-                  <h4>{{slide.slideTitle}}</h4>
-                  <span>{{slide.slideSub}}</span>
+                <div v-for='item in slide'  class="slide_items">
+
+                  <div class="slideBoxTop">
+                    <img :src="item.img" alt="">
+                  </div>
+
+                  <div class="slideBoxBottom">
+
+                    <div class="">
+                      <a href="#">{{item.slideTitle}}</a>
+                    </div>
+
+                    <div class="">
+                      <span>{{item.slideSub}}</span>
+                    </div>
+                  </div>
+
                 </div>
 
               </div>
             </div>
 
+            <div class="slider_indicator">
+              <i :class="(index == active) ? pointerActive : '' " v-for='(slide, index) in slider' class="far fa-circle"></i>
+            </div>
+
           </div>
+          <!-- here end my container -->
 
 
         </section>

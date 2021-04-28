@@ -313,6 +313,12 @@ a {
   padding: 30px 50px;
 }
 
+.pointer {
+  color: #f9636b;
+  background-color: #f9636b;
+  border-radius: 50%;
+}
+
 main section#carousel .my_container .section_top {
   display: flex;
   justify-content: space-between;
@@ -345,14 +351,47 @@ main section#carousel .my_container .carousel_slider {
   flex-wrap: wrap;
 }
 main section#carousel .my_container .carousel_slider .slideBox {
-  width: calc(100% / 3 - 40px);
-  height: 500px;
-  margin: 0 20px;
-  border: 1px solid black;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
-main section#carousel .my_container .carousel_slider .slideBox .slideBoxTop img {
+main section#carousel .my_container .carousel_slider .slide_items {
+  width: calc(100% / 3 - 40px);
+  border-radius: 30px;
+  box-shadow: 0 30px 70px #00000026;
+}
+main section#carousel .my_container .carousel_slider .slide_items:hover {
+  background: #020111;
+  background: linear-gradient(90deg, #020111 0%, #8a3743 0%, #ff0420 0%, #c43d4f 0%, #f9636b 95%);
+}
+main section#carousel .my_container .carousel_slider .slide_items .slideBoxTop img {
   max-width: 100%;
   height: auto;
+  border-radius: 30px;
+}
+main section#carousel .my_container .carousel_slider .slide_items .slideBoxBottom {
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+main section#carousel .my_container .carousel_slider .slide_items .slideBoxBottom div {
+  width: 50%;
+}
+main section#carousel .my_container .carousel_slider .slide_items .slideBoxBottom div a {
+  color: #000;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+main section#carousel .my_container .carousel_slider .slide_items .slideBoxBottom div:nth-of-type(2) {
+  text-align: right;
+  vertical-align: baseline;
+  padding: 9px;
+}
+main section#carousel .my_container .slider_indicator {
+  text-align: center;
+}
+main section#carousel .my_container .slider_indicator i {
+  margin: 0 5px;
 }
 
 * {
@@ -422,12 +461,14 @@ main section#ourPricing .my_container .poster div {
   text-align: center;
 }
 main section#ourPricing .my_container .poster .poster_back_img {
-  color: lightgreen;
   font-size: 350px;
   position: absolute;
   top: -80px;
   right: 0;
-  z-index: -1;
+  z-index: 0;
+}
+main section#ourPricing .my_container .poster .poster_title {
+  position: relative;
 }
 main section#ourPricing .my_container .poster .poster_title h4 {
   font-size: 3rem;
@@ -437,9 +478,18 @@ main section#ourPricing .my_container .poster .poster_title p {
 }
 main section#ourPricing .my_container .poster .poster_price {
   margin: 20px;
+  position: relative;
+}
+main section#ourPricing .my_container .poster .poster_price span {
+  font-size: 1.2rem;
+  position: absolute;
+  left: 0;
 }
 main section#ourPricing .my_container .poster .poster_price h4 {
   font-size: 5rem;
+}
+main section#ourPricing .my_container .poster .poster_content {
+  position: relative;
 }
 main section#ourPricing .my_container .poster .poster_content li {
   margin: 20px;
@@ -449,9 +499,14 @@ main section#ourPricing .my_container .poster:first-of-type,
 main section#ourPricing .my_container .poster:last-of-type {
   background-color: #fff;
 }
+main section#ourPricing .my_container .poster:first-of-type .poster_back_img,
+main section#ourPricing .my_container .poster:last-of-type .poster_back_img {
+  color: rgba(0, 0, 0, 0.2);
+}
 main section#ourPricing .my_container .poster:first-of-type .poster_button,
 main section#ourPricing .my_container .poster:last-of-type .poster_button {
   margin: 30px 0 50px 0;
+  position: relative;
 }
 main section#ourPricing .my_container .poster:first-of-type .poster_button a,
 main section#ourPricing .my_container .poster:last-of-type .poster_button a {
@@ -476,8 +531,12 @@ main section#ourPricing .my_container .poster:nth-of-type(2) {
   background: linear-gradient(90deg, #020111 0%, #8a3743 0%, #ff0420 0%, #c43d4f 0%, #f9636b 95%);
   color: #fff;
 }
+main section#ourPricing .my_container .poster:nth-of-type(2) .poster_back_img {
+  color: rgba(255, 255, 255, 0.5);
+}
 main section#ourPricing .my_container .poster:nth-of-type(2) .poster_button {
   margin: 30px 0 50px 0;
+  position: relative;
 }
 main section#ourPricing .my_container .poster:nth-of-type(2) .poster_button a {
   padding: 15px 40px;

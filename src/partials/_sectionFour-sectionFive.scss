@@ -43,17 +43,15 @@ main{
         }
 
         .poster_back_img{
-          color: lightgreen;
-
           font-size: 350px;
           position: absolute;
           top: -80px;
           right:0;
-          z-index: -1;
+          z-index: 0;
         }
 
         .poster_title{
-
+          position: relative;
           h4{
             font-size: 3rem;
           }
@@ -65,12 +63,22 @@ main{
 
         .poster_price{
           margin: 20px;
+          position: relative;
+
+          span{
+            font-size: 1.2rem;
+            position: absolute;
+            left:0;
+          }
+
           h4{
             font-size: 5rem;
           }
         }
 
         .poster_content{
+          position: relative;
+
           li{
             margin: 20px;
             font-size: 1.2rem;
@@ -83,8 +91,14 @@ main{
       .poster:first-of-type,
       .poster:last-of-type{
         background-color: #fff;
+
+        .poster_back_img{
+          color:rgba(0,0,0, 0.2);
+        }
+
         .poster_button{
           margin: 30px 0 50px 0;
+          position: relative;
           a{
             @include btn-light;
             &:hover{
@@ -95,6 +109,7 @@ main{
             }
           }
         }
+
       }
 
 
@@ -105,8 +120,13 @@ main{
         rgba(249,99,107,1) 95%);
         color:#fff;
 
+        .poster_back_img{
+          color:rgba(255,255,255, 0.5);
+        }
+
         .poster_button{
           margin: 30px 0 50px 0;
+          position: relative;
           a{
             padding: 15px 40px;
             border-radius: 25px;
@@ -119,6 +139,7 @@ main{
             }
           }
         }
+
       }
     }
 
