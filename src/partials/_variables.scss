@@ -4,6 +4,7 @@ $medium-font: 1.2rem;
 //background colors:
 //text colors:
 $focus-text: #f9636b;
+$focus-text2:#03a7d3e6;
 //Fill colors:
 
 @mixin inner_container{
@@ -11,7 +12,6 @@ $focus-text: #f9636b;
 }
 
 @mixin header-brg-color{
-
   background: rgb(2,0,36);
   background: linear-gradient(0deg, rgba(2,0,36,1) 0%,
   rgba(9,9,121,1) 89%, rgba(9,12,123,1) 100%,
@@ -19,6 +19,7 @@ $focus-text: #f9636b;
   rgba(0,212,255,1) 100%, rgba(5,100,181,1) 100%);
 }
 
+// defining buttons style
 @mixin btn-nav {
   padding: 10px 20px;
   border-radius: 25px;
@@ -49,6 +50,7 @@ $focus-text: #f9636b;
 
 }
 
+//defining buttons style in hover state
 @mixin btn-light-hover {
   background: rgb(3,167,211);
   background: linear-gradient(90deg, rgba(3,167,211,1) 0%,

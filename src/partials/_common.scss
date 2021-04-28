@@ -14,3 +14,7 @@ a{
   text-decoration: none;
   color:$menu-defoult-color;
 }
+
+.my_container{
+  @include inner_container;
+}

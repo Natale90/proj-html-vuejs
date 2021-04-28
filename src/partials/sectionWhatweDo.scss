@@ -1,0 +1,204 @@
+@import 'common';
+@import 'variables';
+
+
+main{
+
+  // here starts SECTION-ONE 'whatWeDo'
+  section#whatWeDo{
+    text-align: center;
+    padding: 60px 0px 100px 0px;
+
+
+    p:first-child{
+      color: $focus-text;
+      font-size: 1.2rem;
+    }
+
+    .section_title{
+      font-size: 3.5rem;
+    }
+
+    .card_row{
+      display: flex;
+      margin-top: 200px;
+      margin-bottom: 100px;
+      padding: 30px 0;
+    }
+
+    .card{
+
+      width: calc(100% / 4 - 20px);
+      height: auto;
+      margin: 0 10px;
+      position: relative;
+
+
+      &:hover .card_content{
+        @include header-brg-color;
+        color: #fff;
+
+      }
+      
+      &:hover .my_arrow{
+        display: inline-block;
+      }
+
+      &:hover img{
+        background-color: #fff;
+        box-shadow: 0 30px 70px #00000026;
+      }
+
+      .card_content{
+        padding: 200px 20px 50px 20px;
+        border-radius: 20px;
+        transition: all .3s ease-in;
+
+        p{
+          margin: 40px 0;
+        }
+      }
+
+      img{
+        width: 215px;
+        max-height: 199px;
+        padding: 30px;
+        position: absolute;
+        top: -20%;
+        right: 50%;
+        transform: translate(+50%, 0);
+        transition: all .3s ease-in;
+        border-radius: 20px;
+
+      }
+
+      h3{
+        font-size: 1.8rem;
+      }
+
+      .my_arrow{
+        position: absolute;
+        left: 50%;
+        bottom:-27px;
+        transform: translate(-50%);
+        display: none;
+        &:hover .fa-long-arrow-alt-right{
+          cursor: pointer;
+          box-shadow: 0 20px 70px #00000090;
+
+        }
+      }
+
+      .fa-long-arrow-alt-right{
+        padding: 20px;
+        background: rgb(2,1,17);
+        background: linear-gradient(90deg, rgba(2,1,17,1) 0%,
+        rgba(138,55,67,1) 0%, rgba(255,4,32,1) 0%, rgba(196,61,79,1) 0%,
+        rgba(249,99,107,1) 95%);
+        border-radius: 50%;
+        color: #fff;
+      }
+
+    }
+
+    //defining buttons style
+    .button_container{
+
+      a{
+        @include btn-light;
+        box-shadow: 0 0 30px rgb(200,100,150);
+        &:hover{
+          @include btn-light-hover;
+        }
+      }
+    }
+
+
+  }
+  // here ends SECTION-ONE 'WhatWeDo'
+
+
+
+  // here starts SECTION-TWO 'growYourBussines'
+  section#growYourBusiness{
+    @include header-brg-color;
+    height: 100vh;
+    display: flex;
+    padding: 80px 60px;
+
+    // here starts the left side of the section-two 'growYourBusiness'
+    .sect_left{
+
+      width: 50%;
+      height: 100%;
+      position: relative;
+      margin-top: 80px;
+
+      .img1{
+        width: 65%;
+        height: auto;
+        position: relative;
+        left:20px;
+        bottom: 40px;
+      }
+
+      .img2{
+        width: 65%;
+        height: auto;
+        position: absolute;
+        top:5px;
+        left:70px;
+      }
+
+    }
+    // here hends the left side of the section-two 'growYourBusiness'
+
+
+    // here starts the right side of the section-two 'growYourBusiness'
+    .sect_right{
+
+      width: 50%;
+      height: 100%;
+      padding:30px;
+
+
+      .section_title{
+        font-size: 4rem;
+        color: #fff;
+        margin: 60px 0;
+      }
+
+      p:first-of-type{
+        color:#fff;
+        font-size: 1.2rem;
+      }
+
+      p:last-of-type{
+        color:$focus-text2;
+        font-size: 1.2rem;
+        margin-bottom: 100px;
+      }
+
+      //defining buttons style
+      a:first-of-type{
+        @include btn-light;
+        &:hover{
+          @include btn-light-hover;
+        }
+        margin-right: 60px;
+      }
+
+      a:last-of-type{
+        @include btn-dark;
+
+        &:hover{
+          @include btn-dark-hover;
+        }
+
+      }
+
+    }
+  }
+  // here ends SECTION-TWO 'growYourBussines'
+
+}

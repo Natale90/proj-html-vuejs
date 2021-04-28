@@ -7,13 +7,34 @@ function initVue(){
     el:'#app',
 
     data:{
+
       navbar:['Home','About','Service', 'Blog', 'Contact', 'Portfolio', 'Sign In'],
-      // whatDoweDO:[
-      //   {
-      //     img:,
-      //     title:
-      //   }
-      // ]
+
+      whatDoweDo:[
+
+        {
+          img:'img/Group-247.png',
+          title:'Data Analysis',
+          prph:'When while the lovely valley teems with vapour around meand the meridian sun strikes the upper'
+
+        },
+        {
+          img:'img/Group-538.png',
+          title:'SEO Optimization',
+          prph:'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'
+        },
+        {
+          img:'img/Group-566.png',
+          title:'Security Data',
+          prph:'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'
+        },
+        {
+          img:'img/Group-567.png',
+          title:'Branding Strategy',
+          prph:'When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper'
+        },
+        
+      ],
 
     },
 

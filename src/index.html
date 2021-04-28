@@ -3,6 +3,11 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <!-- link to fontawsome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+    crossorigin="anonymous" />
+    <!-- link to stylesheet -->
     <link rel="stylesheet" href="style.css">
     <!-- vue axios cdn -->
     <script src="https://cdn.jsdelivr.net/npm/axios@0.21.1/dist/axios.min.js"></script>
@@ -57,11 +62,90 @@
 
       <main>
 
-        <section>
+        <section id="whatWeDo">
 
-        </section>
+          <div class="my_container">
 
-        <section>
+            <div class="row">
+              <p>
+                Our Service
+              </p>
+              <div class="section_title">
+                <strong>What</strong>  we do
+              </div>
+              <p>
+                When, while the lovely valley teems with vapour around meand the
+              </p>
+            </div>
+
+            <div class="card_row">
+
+              <div v-for='card in whatDoweDo' class="card">
+
+                <div class="card_top">
+
+                  <div class="figure">
+                    <img :src="card.img" alt="">
+                  </div>
+
+                  <div class="card_content">
+
+                    <h3>
+                      {{card.title}}
+                    </h3>
+
+                    <p>
+                      {{card.prph}}
+                    </p>
+
+                  </div>
+
+                </div>
+
+                <div class="card_bottom">
+                  <div class="my_arrow">
+                    <i class="fas fa-long-arrow-alt-right"></i>
+                  </div>
+                </div>
+
+              </div>
+
+            </div><!-- end of card row -->
+
+            <div class="button_container">
+              <a href="#">View All Service</a>
+            </div>
+
+          </div>
+
+        </section><!-- end of whatWeDo section -->
+
+        <section id="growYourBusiness">
+
+          <div class="sect_left">
+            <img src="img/nemoodar.png" class="img1" alt="">
+            <img src="img/men-data.png" class="img2" alt="">
+
+          </div>
+
+          <div class="sect_right">
+            <p>
+              Start Your Project
+            </p>
+            <div class="section_title">
+              <strong>Grow Your Business </strong><br>
+              With Our Strategy
+            </div>
+
+            <p>
+              When, while the lovely valley teems with vapour around meand
+              the meridian sun strikes the upper surface .of the impenetrable
+              foliage of my trees, and but a few stray gleams steal into the inner sanctuary,
+            </p>
+
+            <a href="#">Try it Now</a>
+            <a href="#">Explore More</a>
+          </div>
 
         </section>
 
