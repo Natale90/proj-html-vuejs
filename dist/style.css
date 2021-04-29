@@ -591,6 +591,9 @@ main section#latestPost .my_container .articles_container article#main_art .art_
 main section#latestPost .my_container .articles_container article#main_art .art_content p {
   max-width: 60%;
 }
+main section#latestPost .my_container .articles_container article#main_art .art_content .art_button {
+  margin-top: 37px;
+}
 main section#latestPost .my_container .articles_container article {
   width: calc(50% / 2 - 40px);
   min-height: 450px;
@@ -621,6 +624,9 @@ main section#latestPost .my_container .articles_container article .art_button a:
   background: #020111;
   background: linear-gradient(90deg, #020111 0%, #8a3743 0%, #ff0420 0%, #c43d4f 0%, #f9636b 95%);
   box-shadow: 0 0 30px #c86496;
+}
+main section#latestPost .my_container .articles_container article:nth-of-type(2) p {
+  margin-bottom: 24px;
 }
 
 * {
@@ -730,12 +736,11 @@ a {
 }
 
 body footer {
-  margin-top: 200px;
   height: 600px;
+  margin-top: 270px;
+  padding-top: 200px;
   background: #020024;
   background: linear-gradient(0deg, #020024 0%, #090979 89%, #090c7b 100%, #090c7b 100%, #08258b 100%, #00d4ff 100%, #0564b5 100%);
-}
-body footer .my_container {
   position: relative;
 }
 body footer .my_container .footer_top {
@@ -751,7 +756,7 @@ body footer .my_container .footer_top {
   position: absolute;
   left: 50px;
   right: 50px;
-  top: -270%;
+  top: -28%;
 }
 body footer .my_container .footer_top .footer_top_left {
   color: #fff;
@@ -789,4 +794,49 @@ body footer .my_container .footer_top .footer_top_right p input#submit:hover {
   background: #020111;
   background: linear-gradient(90deg, #020111 0%, #8a3743 0%, #ff0420 0%, #c43d4f 0%, #f9636b 95%);
   box-shadow: 0 0 30px #c86496;
+}
+body footer .my_container .footer_body {
+  display: flex;
+}
+body footer .my_container .footer_body section {
+  width: calc(100% / 4);
+  height: 100px;
+  color: #aaaaaa;
+  padding: 15px;
+}
+body footer .my_container .footer_body section h4 {
+  color: #fff;
+  font-size: 1.5rem;
+}
+body footer .my_container .footer_body section li {
+  margin: 20px 0;
+}
+body footer .my_container .footer_body section a {
+  font-size: 1.2rem;
+  color: #aaaaaa;
+}
+body footer .my_container .footer_body section a:hover {
+  color: #f9636b;
+}
+body footer .my_container .footer_body section strong {
+  font-size: 1.2rem;
+  color: #fff;
+  margin-right: 5px;
+}
+body footer .my_container .footer_body section#one {
+  padding-right: 30px;
+}
+body footer .my_container .footer_body section#one p {
+  font-size: 1.2rem;
+  margin-top: 30px;
+}
+body footer .my_container .footer_body section#four {
+  font-size: 1.2rem;
+}
+body footer .my_container .footer_body section#four strong {
+  color: #fff;
+  margin-right: 5px;
+}
+body footer .my_container .footer_body section#four p {
+  margin-bottom: 50px;
 }

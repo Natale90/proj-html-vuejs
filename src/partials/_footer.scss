@@ -4,14 +4,16 @@
 body{
 
   footer{
-    margin-top: 200px;
     height: 600px;
-
+    margin-top: 270px;
+    padding-top: 200px;
     @include header-brg-color;
+    position: relative;
 
     .my_container{
-      position: relative;
 
+
+      //here starts the footer-top
       .footer_top{
         max-width: 100%;
         height: 300px;
@@ -28,7 +30,7 @@ body{
         position: absolute;
         left:50px;
         right:50px;
-        top:-270%;
+        top:-28%;
 
         .footer_top_left{
           color:#fff;
@@ -78,9 +80,69 @@ body{
             }
           }
         }
+
       }
+      //here ends the footer-top
+
+      .footer_body{
+        display: flex;
 
 
+        section{
+          width: calc(100% / 4);
+          height: 100px;
+          color:#aaaaaa;
+          padding: 15px;
+
+          h4{
+            color:#fff;
+            font-size: 1.5rem;
+          }
+
+          li{
+            margin: 20px 0;
+          }
+
+          a{
+            font-size: 1.2rem;
+            color:#aaaaaa;
+            &:hover{
+              color: $focus-text;
+            }
+          }
+
+          strong{
+            font-size: 1.2rem;
+            color:#fff;
+            margin-right: 5px;
+          }
+        }
+
+        section#one{
+          padding-right: 30px;
+
+          p{
+            font-size: 1.2rem;
+            margin-top: 30px;
+          }
+        }
+
+        section#four{
+          font-size: 1.2rem;
+
+          strong{
+            color:#fff;
+            margin-right: 5px;
+          }
+          p{
+            margin-bottom:50px;
+          }
+        }
+
+
+
+
+      }
 
     }
   }

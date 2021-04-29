@@ -193,6 +193,21 @@ function initVue(){
         'img/clienty-4.png',
       ],
 
+      quickLinks:[
+
+        'Service',
+        'Contact',
+        'Blog',
+
+      ],
+
+      resources:[
+        'Art design',
+        'Computer',
+        'IT news',
+        'NetWorking',
+        'Web Security',
+      ],
 
     },
     //end of Data
@@ -222,6 +237,18 @@ function initVue(){
           this.active--;
         }
       },
+
+      // getLink: function(links){
+      //   const newLinks = [];
+      //
+      //   for(let i =0;i<links.length;i++){
+      //
+      //     let oneLink = links[i];
+      //     newLinks.push(oneLink);
+      //   }
+      //   return newLinks;
+      // },
+
     },
 
   });
