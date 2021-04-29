@@ -26,6 +26,7 @@ main{
         justify-content: space-around;
         align-items: center;
         transition: all .3s ease-in;
+
         &:hover{
           box-shadow: 0 30px 70px #00000026;
         }
@@ -54,6 +55,20 @@ main{
         .card_center, .card_bottom{
           text-align: center;
         }
+
+
+      }
+      // card ends here
+
+
+    }
+    // here ends section center
+    .section_bottom{
+      margin-top: 170px;
+      ul{
+        display: flex;
+        justify-content: space-between;
+
       }
     }
   }

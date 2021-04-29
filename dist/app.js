@@ -126,7 +126,8 @@ function initVue() {
         reviwe: 'When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand.',
         name: 'Gennara Bitondo',
         role: 'Panettiere'
-      }]
+      }],
+      clients: ['img/client-1-1.png', 'img/client-5.png', 'img/clienty-2.png', 'img/clienty-3.png', 'img/clienty-4.png']
     },
     //end of Data
     methods: {
