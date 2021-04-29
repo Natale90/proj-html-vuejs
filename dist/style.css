@@ -141,6 +141,9 @@ main section#whatWeDo p:first-child {
 main section#whatWeDo .section_title {
   font-size: 3.5rem;
 }
+main section#whatWeDo p:last-child {
+  font-size: 1.2rem;
+}
 main section#whatWeDo .card_row {
   display: flex;
   margin-top: 200px;
@@ -437,6 +440,9 @@ main section#ourPricing .section_top_bgd .row p:first-child {
 main section#ourPricing .section_top_bgd .row .section_title {
   font-size: 3.5rem;
 }
+main section#ourPricing .section_top_bgd .row p:last-child {
+  font-size: 1.2rem;
+}
 main section#ourPricing .my_container {
   display: flex;
   justify-content: space-around;
@@ -547,4 +553,48 @@ main section#ourPricing .my_container .poster:nth-of-type(2) .poster_button a {
 }
 main section#ourPricing .my_container .poster:nth-of-type(2) .poster_button a .fa-arrow-right {
   margin-left: 30px;
+}
+main section#latestPost .my_container .section_top {
+  margin-top: 450px;
+  text-align: center;
+  padding: 60px 0px 100px 0px;
+}
+main section#latestPost .my_container .section_top p:first-child {
+  color: #f9636b;
+  font-size: 1.2rem;
+}
+main section#latestPost .my_container .section_top .section_title {
+  font-size: 3.5rem;
+}
+main section#latestPost .my_container .section_top p:last-child {
+  font-size: 1.2rem;
+}
+main section#latestPost .my_container .articles_container {
+  display: flex;
+}
+main section#latestPost .my_container .articles_container article#main_art {
+  width: 50%;
+  background-color: blue;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+main section#latestPost .my_container .articles_container article {
+  width: calc(50% / 2 - 40px);
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin: 0 20px;
+  padding: 40px;
+  border-radius: 25px;
+  background-color: lightgreen;
+  color: #fff;
+}
+main section#latestPost .my_container .articles_container article .art_title {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+main section#latestPost .my_container .articles_container article p {
+  font-size: 1.2rem;
 }

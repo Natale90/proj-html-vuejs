@@ -156,7 +156,10 @@ function initVue(){
         }
       ],
 
+
     },
+    //end of Data
+
 
     methods:{
 

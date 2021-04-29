@@ -109,6 +109,7 @@ function initVue() {
         liRight: ' Design'
       }]
     },
+    //end of Data
     methods: {
       slideNext: function slideNext() {
         if (this.active === this.slider.length - 1) {

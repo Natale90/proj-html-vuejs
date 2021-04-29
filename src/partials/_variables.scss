@@ -20,6 +20,11 @@ $focus-text2:#03a7d3e6;
 }
 
 // defining buttons style
+@mixin btn-general{
+  padding: 10px 20px;
+  border-radius: 25px;
+}
+
 @mixin btn-nav {
   padding: 10px 20px;
   border-radius: 25px;
@@ -46,7 +51,6 @@ $focus-text2:#03a7d3e6;
   background: rgb(3,167,211);
   background: linear-gradient(90deg, rgba(3,167,211,1) 0%,
   rgba(78,126,234,1) 31%, rgba(5,50,168,1) 100%);
-
 
 }
 
@@ -79,6 +83,11 @@ $focus-text2:#03a7d3e6;
 
   .section_title{
     font-size: 3.5rem;
+  }
+
+  p:last-child{
+    font-size: 1.2rem;
+
   }
 
 }

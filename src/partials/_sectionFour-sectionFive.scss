@@ -138,6 +138,7 @@ main{
               margin-left: 30px;
             }
           }
+
         }
 
       }
@@ -150,6 +151,49 @@ main{
   //here strats SECTION FIVE
   section#latestPost{
 
+    .my_container{
+
+      .section_top{
+        margin-top: 450px;
+        @include sectionTitle;
+      }
+
+      .articles_container{
+        display: flex;
+
+        article#main_art{
+          // width: calc(50% - 40px);
+          width: 50%;
+          background-color: blue;
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-end;
+        }
+
+        article{
+          width: calc(50% / 2 - 40px);
+          min-height: 400px;
+          display: flex;
+          flex-direction: column;
+          justify-content: space-around;
+          margin: 0 20px;
+          padding: 40px;
+          border-radius: 25px;
+          background-color: lightgreen;
+          color:#fff;
+
+          .art_title{
+            font-size: 1.5rem;
+            font-weight: bold;
+          }
+
+          p{
+            font-size: 1.2rem;
+          }
+        }
+
+      }
+    }
   }
   //here ends SECTION FIVE
 }
