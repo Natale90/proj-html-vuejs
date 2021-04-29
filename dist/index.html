@@ -463,6 +463,7 @@
                 </div>
                 <div class="card_top">
                   <i v-for='star in testimonial.vote' class="fas fa-star"></i>
+                  <i v-for='star in (5 - (testimonial.vote))' class="far fa-star"></i>
                 </div>
 
                 <div class="card_center">

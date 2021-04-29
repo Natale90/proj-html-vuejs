@@ -18,11 +18,41 @@ main{
       .card{
         width:calc(100% / 3 - 40px);
         height: 300px;
-        background-color: pink;
+        padding: 20px;
+        border-radius: 25px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        transition: all .3s ease-in;
+        &:hover{
+          box-shadow: 0 30px 70px #00000026;
+        }
 
-        img{
-          max-width: 100px;
-          height: auto;
+        .photo{
+          position: absolute;
+          top:-50px;
+
+          img{
+            max-width: 100px;
+            height: auto;
+            border-radius: 50%;
+            border: 2px solid #b6246e;
+          }
+
+        }
+
+        .card_top{
+          margin-top: 60px;
+
+          i{
+            color: #b6246e;
+          }
+        }
+
+        .card_center, .card_bottom{
+          text-align: center;
         }
       }
     }

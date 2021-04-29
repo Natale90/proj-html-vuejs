@@ -578,6 +578,7 @@ main section#latestPost .my_container .articles_container article#main_art {
   flex-direction: column;
   justify-content: flex-end;
   background-image: url(img/headway-537308-unsplash-1380x703.jpg);
+  background-size: contain;
 }
 main section#latestPost .my_container .articles_container article#main_art div {
   margin: 10px 0;
@@ -666,9 +667,34 @@ main section#WhatPeopleSay .section_center {
 main section#WhatPeopleSay .section_center .card {
   width: calc(100% / 3 - 40px);
   height: 300px;
-  background-color: pink;
+  padding: 20px;
+  border-radius: 25px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  transition: all 0.3s ease-in;
 }
-main section#WhatPeopleSay .section_center .card img {
+main section#WhatPeopleSay .section_center .card:hover {
+  box-shadow: 0 30px 70px #00000026;
+}
+main section#WhatPeopleSay .section_center .card .photo {
+  position: absolute;
+  top: -50px;
+}
+main section#WhatPeopleSay .section_center .card .photo img {
   max-width: 100px;
   height: auto;
+  border-radius: 50%;
+  border: 2px solid #b6246e;
+}
+main section#WhatPeopleSay .section_center .card .card_top {
+  margin-top: 60px;
+}
+main section#WhatPeopleSay .section_center .card .card_top i {
+  color: #b6246e;
+}
+main section#WhatPeopleSay .section_center .card .card_center, main section#WhatPeopleSay .section_center .card .card_bottom {
+  text-align: center;
 }

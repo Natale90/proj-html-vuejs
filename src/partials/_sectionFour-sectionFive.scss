@@ -168,7 +168,7 @@ main{
           flex-direction: column;
           justify-content: flex-end;
           background-image: url(img/headway-537308-unsplash-1380x703.jpg);
-
+          background-size: contain;
           div{
             margin: 10px 0;
           }
@@ -217,7 +217,7 @@ main{
               color: #000;
             }
           }
-          
+
         }
 
       }
