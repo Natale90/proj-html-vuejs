@@ -164,23 +164,39 @@ main{
         article#main_art{
           // width: calc(50% - 40px);
           width: 50%;
-          background-color: blue;
           display: flex;
           flex-direction: column;
           justify-content: flex-end;
+          background-image: url(img/headway-537308-unsplash-1380x703.jpg);
+
+          div{
+            margin: 10px 0;
+          }
+
+          .art_content{
+
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            p{
+              max-width: 60%;
+
+            }
+
+          }
         }
 
         article{
           width: calc(50% / 2 - 40px);
-          min-height: 400px;
+          min-height: 450px;
           display: flex;
           flex-direction: column;
           justify-content: space-around;
           margin: 0 20px;
           padding: 40px;
           border-radius: 25px;
-          background-color: lightgreen;
           color:#fff;
+          @include header-brg-color;
 
           .art_title{
             font-size: 1.5rem;
@@ -190,6 +206,18 @@ main{
           p{
             font-size: 1.2rem;
           }
+
+          .art_button{
+
+            a{
+              @include btn-general;
+              &:hover{
+                @include btn-dark-hover;
+              }
+              color: #000;
+            }
+          }
+          
         }
 
       }

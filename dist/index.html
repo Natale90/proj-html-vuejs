@@ -342,6 +342,7 @@
 
             <!-- blog section -->
             <div class="section_bottom">
+
               <div class="articles_container">
 
                 <!-- main articles starts here -->
@@ -369,26 +370,35 @@
                 </article>
                 <!-- main articles ends here -->
 
-                <!-- others articles -->
+                <!-- second article -->
                 <article class="">
+
                   <div class="art_detail">
                     <a href="#">April, 21 -</a>
                     <span>By Poul</span>
                   </div>
+
                   <div class="art_title">
                     <a href="#">
                       Clearing Corporations get SEBI nod to
                       invest in overnight funds
                     </a>
                   </div>
-                  <p>
-                    When, while the lovely valley teems with vapour
-                    around meand the meridian sun strikes the upper surface .
-                  </p>
 
-                  <a href="#">read More</a>
+                  <div class="art_content">
+                    <p>
+                      When, while the lovely valley teems with vapour
+                      around meand the meridian sun strikes the upper surface .
+                    </p>
+                    <div class="art_button">
+                      <a href="#">read More</a>
+                    </div>
+                  </div>
+
                 </article>
+                <!-- end of second article -->
 
+                <!-- third article -->
                 <article class="">
 
                   <div class="art_detail">
@@ -413,16 +423,79 @@
                     <a href="#">read More</a>
                   </div>
                 </article>
-                <!-- here ends others articles -->
+                <!-- end of third article -->
 
               </div>
+
             </div>
 
           </div>
 
         </section>
 
-        <section>
+        <section id="WhatPeopleSay">
+
+          <div class="my_container">
+
+            <div class="section_top">
+              <p>
+                Testimonials
+              </p>
+
+              <div class="section_title">
+
+
+                <h4>
+                  <strong>What</strong> People Say
+                </h4>
+              </div>
+
+              <p>
+                When, while the lovely valley teems with vapour around meand the meridian sun strikes the upper surface .
+              </p>
+            </div>
+
+            <div class="section_center">
+
+              <div v-for='testimonial in testimonials' class="card">
+                <div class="photo">
+                  <img :src="testimonial.photo" alt="">
+                </div>
+                <div class="card_top">
+                  <i v-for='star in testimonial.vote' class="fas fa-star"></i>
+                </div>
+
+                <div class="card_center">
+
+                  <p>
+                    {{testimonial.reviwe}}
+                  </p>
+
+                </div>
+
+                <div class="card_bottom">
+                  <h4>
+                    {{testimonial.name}}
+                  </h4>
+
+                  <p>
+                    {{testimonial.role}}
+                  </p>
+
+                </div>
+
+              </div>
+
+
+            </div>
+
+            <div class="section_bottom">
+
+            </div>
+
+
+          </div>
+
 
         </section>
 

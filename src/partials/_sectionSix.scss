@@ -1,0 +1,30 @@
+@import 'common';
+@import 'variables';
+
+
+
+main{
+
+  section#WhatPeopleSay{
+
+    .section_top{
+      @include sectionTitle;
+    }
+
+    .section_center{
+      display: flex;
+      justify-content: space-between;
+
+      .card{
+        width:calc(100% / 3 - 40px);
+        height: 300px;
+        background-color: pink;
+
+        img{
+          max-width: 100px;
+          height: auto;
+        }
+      }
+    }
+  }
+}

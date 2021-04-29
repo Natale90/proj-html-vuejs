@@ -107,6 +107,25 @@ function initVue() {
       }, {
         liLeft: 'Exceptional ',
         liRight: ' Design'
+      }],
+      testimonials: [{
+        photo: 'img/szabo-viktor-1266895-unsplash-1024x1024.png',
+        vote: 3,
+        reviwe: 'When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand.',
+        name: 'Michkel Angel',
+        role: 'Marketing Management'
+      }, {
+        photo: 'img/philipe-cavalcante-539505-unsplash-1024x1024.png',
+        vote: 4,
+        reviwe: 'When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand.',
+        name: 'Anghel Mikel',
+        role: 'Sale Strategis'
+      }, {
+        photo: 'img/fabio-spinelli-695744-unsplash-1024x1024.png',
+        vote: 2,
+        reviwe: 'When, while lovely valley teems with vapour around meand meridian sun strikes the upper impenetrable foliage of my trees, and but a thousand.',
+        name: 'Gennara Bitondo',
+        role: 'Panettiere'
       }]
     },
     //end of Data

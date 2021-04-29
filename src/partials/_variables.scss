@@ -21,8 +21,9 @@ $focus-text2:#03a7d3e6;
 
 // defining buttons style
 @mixin btn-general{
-  padding: 10px 20px;
+  padding: 15px 30px;
   border-radius: 25px;
+  background-color: #fff;
 }
 
 @mixin btn-nav {
