@@ -10,7 +10,41 @@ function initVue(){
 
       pointerActive:'pointer',
       active: 0,
-      navbar:['Home','About','Service', 'Blog', 'Contact', 'Portfolio', 'Sign In'],
+      chat: false,
+
+
+      navbar:[
+
+        {
+          url:'#',
+          name:'Home',
+        },
+        {
+          url:'#',
+          name:'About',
+        },
+        {
+          url:'#',
+          name:'Service',
+        },
+        {
+          url:'#',
+          name:'Blog',
+        },
+        {
+          url:'#',
+          name:'Contact',
+        },
+        {
+          url:'#',
+          name:'Portfolio',
+        },
+        {
+          url:'#',
+          name:'Sign In',
+        },
+
+      ],
 
       whatDoweDo:[
 
@@ -193,20 +227,59 @@ function initVue(){
         'img/clienty-4.png',
       ],
 
+
       quickLinks:[
 
-        'Service',
-        'Contact',
-        'Blog',
+        {
+          url:'#',
+          name:'Service',
+        },
+
+        {
+          url:'#',
+          name:'Contact',
+        },
+        {
+          url:'#',
+          name:'Blog',
+        }
 
       ],
 
       resources:[
-        'Art design',
-        'Computer',
-        'IT news',
-        'NetWorking',
-        'Web Security',
+
+        {
+          url:'#',
+          name:'Art design',
+        },
+        {
+          url:'#',
+          name:'Computer',
+        },
+        {
+          url:'#',
+          name:'IT news',
+        },
+        {
+          url:'#',
+          name:'NetWorking',
+        },
+        {
+          url:'#',
+          name:'Web Security',
+        },
+
+      ],
+
+      //chatWindow's Data
+      people:[
+
+        'img/philipe-cavalcante-539505-unsplash-1024x1024.png',
+        'img/fabio-spinelli-695744-unsplash-1024x1024.png',
+        'img/szabo-viktor-1266895-unsplash-1024x1024.png',
+        'img/philipe-cavalcante-539505-unsplash-1024x1024.png',
+        'img/fabio-spinelli-695744-unsplash-1024x1024.png',
+        'img/szabo-viktor-1266895-unsplash-1024x1024.png',
       ],
 
     },
@@ -238,16 +311,10 @@ function initVue(){
         }
       },
 
-      // getLink: function(links){
-      //   const newLinks = [];
-      //
-      //   for(let i =0;i<links.length;i++){
-      //
-      //     let oneLink = links[i];
-      //     newLinks.push(oneLink);
-      //   }
-      //   return newLinks;
-      // },
+      showChat: function(){
+
+        this.chat = !this.chat;
+      },
 
     },
 

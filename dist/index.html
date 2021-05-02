@@ -29,7 +29,7 @@
 
           <nav>
             <ul>
-              <li v-for='link in navbar'><a href="#">{{link}}</a></li>
+              <li v-for='link in navbar'><a :href="link.url">{{link.name}}</a></li>
             </ul>
           </nav>
 
@@ -256,7 +256,7 @@
               </div>
 
               <div class="poster_button">
-                <a href="#">oredr now <i class="fas fa-arrow-right"></i> </a>
+                <a href="#">Order Now <i class="fas fa-arrow-right"></i> </a>
               </div>
 
             </div>
@@ -284,7 +284,7 @@
               </div>
 
               <div class="poster_button">
-                <a href="#">oredr now <i class="fas fa-arrow-right"></i> </a>
+                <a href="#">Order Now  <i class="fas fa-arrow-right"></i> </a>
               </div>
 
             </div>
@@ -312,7 +312,7 @@
               </div>
 
               <div class="poster_button">
-                <a href="#">oredr now <i class="fas fa-arrow-right"></i> </a>
+                <a href="#">Order Now <i class="fas fa-arrow-right"></i> </a>
               </div>
 
             </div>
@@ -560,7 +560,7 @@
                 Quik LInks
               </h4>
               <ul>
-                <li v-for='link in quickLinks' > <a href="#">{{link}}</a> </li>
+                <li v-for='link in quickLinks' > <a :href="link.url">{{link.name}}</a> </li>
               </ul>
             </section>
 
@@ -569,7 +569,7 @@
                 Resources
               </h4>
               <ul>
-                <li v-for='link in resources'> <a href="#">{{link}}</a> </li>
+                <li v-for='link in resources'> <a :href="link.url">{{link.name}}</a> </li>
               </ul>
             </section>
 
@@ -592,6 +592,57 @@
         </div>
 
       </footer>
+
+      <div class="fixed_container">
+
+        <div  @click='showChat' class="chat_icon">
+          <i v-if='chat' class="fas fa-times"></i>
+          <i v-else class="far fa-comment"></i>
+        </div>
+
+        <div v-if="chat" class="chat_window">
+
+          <div class="chat_window_top">
+
+            <div class="top_faq">
+              <span><i class="far fa-comment-alt"></i><a href="#">Ask</a></span>
+              <span><i class="fas fa-search"></i><a href="#">FAQ</a></span>
+            </div>
+
+            <div class="center_people">
+              <ul>
+                <li v-for='(person, index) in people'>
+                  <img :src="person" alt="">
+                </li>
+              </ul>
+            </div>
+
+            <div class="bottom_help">
+              <p>
+                How can we help?
+              </p>
+
+              <p>
+                We usually respond in few hours
+              </p>
+            </div>
+
+          </div>
+
+          <div  class="chat_window_bottom">
+
+            <form  class="" action="index.html" method="post">
+              <input type="text" name="" value="" placeholder="Name" required>
+              <input type="text" name="" value="" placeholder="Subject" required>
+              <input type="email" name="" value="" placeholder="email address" required>
+              <textarea name="name" rows="8" cols="80" placeholder="How we can Help?" required></textarea>
+              <input type="submit" name="" value="Send a messange" placeholder="Send a messange">
+            </form>
+
+          </div>
+
+        </div>
+      </div>
 
 
     </div> <!-- end of Vue container-->
