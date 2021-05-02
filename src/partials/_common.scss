@@ -23,3 +23,19 @@ a{
 .my_container{
   @include inner_container;
 }
+
+
+.sent_message{
+  text-align: right;
+
+  .the_message{
+    background-color: #e0e0e0;
+  }
+}
+
+.recieved_message{
+
+  .the_message{
+    background-color: #03a7d3e6;
+  }
+}

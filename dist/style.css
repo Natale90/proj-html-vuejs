@@ -21,6 +21,17 @@ a {
   padding: 30px 50px;
 }
 
+.sent_message {
+  text-align: right;
+}
+.sent_message .the_message {
+  background-color: #e0e0e0;
+}
+
+.recieved_message .the_message {
+  background-color: #03a7d3e6;
+}
+
 header {
   background: #020024;
   background: linear-gradient(0deg, #020024 0%, #090979 89%, #090c7b 100%, #090c7b 100%, #08258b 100%, #00d4ff 100%, #0564b5 100%);
@@ -128,6 +139,17 @@ a {
 
 .my_container {
   padding: 30px 50px;
+}
+
+.sent_message {
+  text-align: right;
+}
+.sent_message .the_message {
+  background-color: #e0e0e0;
+}
+
+.recieved_message .the_message {
+  background-color: #03a7d3e6;
 }
 
 main section#whatWeDo {
@@ -316,6 +338,17 @@ a {
   padding: 30px 50px;
 }
 
+.sent_message {
+  text-align: right;
+}
+.sent_message .the_message {
+  background-color: #e0e0e0;
+}
+
+.recieved_message .the_message {
+  background-color: #03a7d3e6;
+}
+
 .pointer {
   color: #f9636b;
   background-color: #f9636b;
@@ -419,6 +452,17 @@ a {
 
 .my_container {
   padding: 30px 50px;
+}
+
+.sent_message {
+  text-align: right;
+}
+.sent_message .the_message {
+  background-color: #e0e0e0;
+}
+
+.recieved_message .the_message {
+  background-color: #03a7d3e6;
 }
 
 main section#ourPricing {
@@ -653,6 +697,17 @@ a {
   padding: 30px 50px;
 }
 
+.sent_message {
+  text-align: right;
+}
+.sent_message .the_message {
+  background-color: #e0e0e0;
+}
+
+.recieved_message .the_message {
+  background-color: #03a7d3e6;
+}
+
 main section#WhatPeopleSay .section_top {
   text-align: center;
   padding: 60px 0px 100px 0px;
@@ -734,6 +789,17 @@ a {
 
 .my_container {
   padding: 30px 50px;
+}
+
+.sent_message {
+  text-align: right;
+}
+.sent_message .the_message {
+  background-color: #e0e0e0;
+}
+
+.recieved_message .the_message {
+  background-color: #03a7d3e6;
 }
 
 body footer {
@@ -865,6 +931,17 @@ a {
   padding: 30px 50px;
 }
 
+.sent_message {
+  text-align: right;
+}
+.sent_message .the_message {
+  background-color: #e0e0e0;
+}
+
+.recieved_message .the_message {
+  background-color: #03a7d3e6;
+}
+
 body .fixed_container .chat_icon {
   width: 80px;
   height: 80px;
@@ -933,6 +1010,52 @@ body .fixed_container .chat_window .chat_window_bottom {
   height: calc(100% - 200px);
   padding: 20px;
   background-color: #00000014;
+}
+body .fixed_container .chat_window .chat_window_bottom .chat_home .email_action, body .fixed_container .chat_window .chat_window_bottom .chat_home .chat_action {
+  height: 100px;
+  margin: 20px 0;
+  display: flex;
+  border-radius: 10px;
+  border: 1px solid #03a7d3e6;
+}
+body .fixed_container .chat_window .chat_window_bottom .chat_home .email_action_left_icon,
+body .fixed_container .chat_window .chat_window_bottom .chat_home .email_action_right_text,
+body .fixed_container .chat_window .chat_window_bottom .chat_home .chat_action_left_icon,
+body .fixed_container .chat_window .chat_window_bottom .chat_home .chat_action_right_text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+}
+body .fixed_container .chat_window .chat_window_bottom .conversation .text_conversation {
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  background-color: #fff;
+  padding: 10px;
+  overflow-y: auto;
+}
+body .fixed_container .chat_window .chat_window_bottom .conversation .text_conversation .one_message {
+  margin: 10px 0;
+}
+body .fixed_container .chat_window .chat_window_bottom .conversation .text_conversation .one_message .the_message {
+  padding: 5px 10px;
+  display: inline-block;
+  max-width: 200px;
+  border-radius: 10px;
+}
+body .fixed_container .chat_window .chat_window_bottom .conversation .input_container {
+  position: relative;
+}
+body .fixed_container .chat_window .chat_window_bottom .conversation .input_container input {
+  width: 100%;
+  padding: 10px 5px;
+  margin-top: 5px;
+}
+body .fixed_container .chat_window .chat_window_bottom .conversation .input_container i.far.fa-paper-plane {
+  position: absolute;
+  right: 10px;
+  top: 40%;
 }
 body .fixed_container .chat_window .chat_window_bottom form {
   display: flex;

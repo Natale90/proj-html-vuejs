@@ -593,18 +593,22 @@
 
       </footer>
 
+      <!-- everything below this line is about the chat window -->
       <div class="fixed_container">
 
+        <!-- icon always visible in fixed position -->
         <div  @click='showChat' class="chat_icon">
           <i v-if='chat' class="fas fa-times"></i>
           <i v-else class="far fa-comment"></i>
         </div>
+
 
         <div v-if="chat" class="chat_window">
 
           <div class="chat_window_top">
 
             <div class="top_faq">
+              <i @click='backArrow' class="fas fa-arrow-left"></i>
               <span><i class="far fa-comment-alt"></i><a href="#">Ask</a></span>
               <span><i class="fas fa-search"></i><a href="#">FAQ</a></span>
             </div>
@@ -631,15 +635,71 @@
 
           <div  class="chat_window_bottom">
 
-            <form  class="" action="index.html" method="post">
+            <!-- first page in the chat window -->
+            <div v-if='form === false && conversation == false' class="chat_home">
+
+              <div  @click='showForm' class="email_action">
+                <div class="email_action_left_icon">
+                  <i class="far fa-paper-plane"></i>
+                </div>
+                <div class="email_action_right_text">
+                  <span>
+                    Email
+                  </span>
+                  <p>
+                    No time to wait around? We usually respond within a few hours
+                  </p>
+                </div>
+              </div>
+
+              <div  @click='showConversation' class="chat_action">
+
+                <div class="chat_action_left_icon">
+                  <i class="far fa-comments"></i>
+                </div>
+                <div class="chat_action_right_text">
+                  <span>
+                    Chat
+                  </span>
+                  <p>
+                    We're online right now, talk with our team in real time
+                  </p>
+                </div>
+
+              </div>
+
+            </div>
+            <!-- end of the first page in the chat window -->
+
+            <div v-if='conversation' class="conversation">
+
+              <div class="text_conversation">
+                <div  v-for='message in currentCoversation'
+                      class="one_message"
+                      :class="(message.status == 'sent') ? sentMessage : recievedMessage ">
+
+                  <span class="the_message">{{message.text}}</span>
+                </div>
+              </div>
+
+              <div class="input_container">
+                <input v-on:keyup.enter='talkInChat' v-model='myLastMessage' type="text" name="" value="" placeholder="Send a message">
+                <i @click='talkInChat' class="far fa-paper-plane"></i>
+              </div>
+            </div>
+
+            <!-- below this line is the html regarding the form in the chat window -->
+            <form v-if='form' class="" action="index.html" method="post">
               <input type="text" name="" value="" placeholder="Name" required>
               <input type="text" name="" value="" placeholder="Subject" required>
               <input type="email" name="" value="" placeholder="email address" required>
               <textarea name="name" rows="8" cols="80" placeholder="How we can Help?" required></textarea>
               <input type="submit" name="" value="Send a messange" placeholder="Send a messange">
             </form>
+            <!-- above this line is the html regarding the form in the chat window -->
 
           </div>
+          <!-- end of chat_window_bottom -->
 
         </div>
       </div>

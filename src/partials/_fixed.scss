@@ -80,12 +80,88 @@ body{
             font-weight: bold;
           }
         }
+
       }
 
       .chat_window_bottom{
         height: calc(100% - 200px);
         padding: 20px;
         background-color: #00000014;
+
+        // below this line first page in ther chat window
+        .chat_home{
+
+          .email_action, .chat_action{
+            height: 100px;
+            margin:20px 0;
+            display: flex;
+            border-radius: 10px;
+            border: 1px solid #03a7d3e6;
+            
+          }
+
+          .email_action_left_icon,
+          .email_action_right_text,
+          .chat_action_left_icon,
+          .chat_action_right_text {
+            display:flex;
+            flex-direction: column;
+            justify-content: center;
+            padding: 10px;
+          }
+
+        }
+        // above this line first page in ther chat window
+
+        // -------------------------
+
+        // below this line is code about the direct chat in the chat window
+        .conversation{
+
+          .text_conversation{
+            display: flex;
+            flex-direction: column;
+            height:  300px;
+            background-color: #fff;
+            padding: 10px;
+            overflow-y: auto;
+
+            .one_message{
+              margin: 10px 0;
+
+              .the_message{
+                padding: 5px 10px;
+                display: inline-block;
+                max-width: 200px;
+                border-radius: 10px;
+
+              }
+
+            }
+          }
+
+          .input_container{
+            position: relative;
+
+            input{
+              width: 100%;
+              padding: 10px 5px;
+              margin-top: 5px;
+            }
+
+            i.far.fa-paper-plane{
+              position: absolute;
+              right:10px;
+              top:40%;
+
+            }
+          }
+
+        }
+
+        // above this line is code about the direct chat in the chat window
+
+        // ------------------------
 
         form{
           display:flex;

@@ -11,9 +11,15 @@ function initVue() {
   new Vue({
     el: '#app',
     data: {
+      // css classes
+      sentMessage: 'sent_message',
+      recievedMessage: 'recieved_message',
       pointerActive: 'pointer',
       active: 0,
       chat: false,
+      form: false,
+      conversation: false,
+      myLastMessage: '',
       navbar: [{
         url: '#',
         name: 'Home'
@@ -177,7 +183,12 @@ function initVue() {
         name: 'Web Security'
       }],
       //chatWindow's Data
-      people: ['img/philipe-cavalcante-539505-unsplash-1024x1024.png', 'img/fabio-spinelli-695744-unsplash-1024x1024.png', 'img/szabo-viktor-1266895-unsplash-1024x1024.png', 'img/philipe-cavalcante-539505-unsplash-1024x1024.png', 'img/fabio-spinelli-695744-unsplash-1024x1024.png', 'img/szabo-viktor-1266895-unsplash-1024x1024.png']
+      people: ['img/philipe-cavalcante-539505-unsplash-1024x1024.png', 'img/fabio-spinelli-695744-unsplash-1024x1024.png', 'img/szabo-viktor-1266895-unsplash-1024x1024.png', 'img/philipe-cavalcante-539505-unsplash-1024x1024.png', 'img/fabio-spinelli-695744-unsplash-1024x1024.png', 'img/szabo-viktor-1266895-unsplash-1024x1024.png'],
+      currentCoversation: [{
+        name: 'Phlox',
+        text: 'Hi, how can i help you?',
+        status: 'recieved'
+      }]
     },
     //end of Data
     methods: {
@@ -197,6 +208,28 @@ function initVue() {
       },
       showChat: function showChat() {
         this.chat = !this.chat;
+      },
+      showForm: function showForm() {
+        this.form = true;
+      },
+      backArrow: function backArrow() {
+        this.form = false;
+        this.conversation = false;
+      },
+      showConversation: function showConversation() {
+        this.conversation = true;
+      },
+      talkInChat: function talkInChat() {
+        var myText = {
+          name: 'you',
+          text: this.myLastMessage,
+          status: 'sent'
+        };
+
+        if (this.myLastMessage.length > 0) {
+          this.currentCoversation.push(myText);
+          this.myLastMessage = '';
+        }
       }
     }
   });

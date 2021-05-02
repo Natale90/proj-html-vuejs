@@ -7,10 +7,15 @@ function initVue(){
     el:'#app',
 
     data:{
-
+      // css classes
+      sentMessage:'sent_message',
+      recievedMessage:'recieved_message',
       pointerActive:'pointer',
       active: 0,
       chat: false,
+      form:false,
+      conversation: false,
+      myLastMessage:'',
 
 
       navbar:[
@@ -282,6 +287,15 @@ function initVue(){
         'img/szabo-viktor-1266895-unsplash-1024x1024.png',
       ],
 
+      currentCoversation:[
+
+        {
+          name:'Phlox',
+          text:'Hi, how can i help you?',
+          status: 'recieved',
+        },
+
+      ],
     },
     //end of Data
 
@@ -314,6 +328,39 @@ function initVue(){
       showChat: function(){
 
         this.chat = !this.chat;
+      },
+
+      showForm: function(){
+
+        this.form = true;
+      },
+
+      backArrow: function(){
+
+        this.form = false;
+        this.conversation = false;
+      },
+
+      showConversation: function(){
+
+        this.conversation = true;
+      },
+
+      talkInChat: function(){
+
+        let myText = {
+
+          name:'you',
+          text: this.myLastMessage,
+          status:'sent'
+        }
+
+        if(this.myLastMessage.length > 0){
+
+          this.currentCoversation.push(myText);
+          this.myLastMessage = '';
+        }
+
       },
 
     },
